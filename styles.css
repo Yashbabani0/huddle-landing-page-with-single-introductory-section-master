@@ -25,7 +25,7 @@ main {
   margin-top: 40px;
 }
 #main-img {
-  max-width: ;
+  background-image: url(./images/bg-desktop.svg);
   width: 50%;
 }
 #data {
@@ -90,4 +90,59 @@ button:hover {
 }
 .attribution a {
   color: var(--Soft-Magenta);
+}
+/* Your existing CSS code */
+
+@media (max-width: 1000px) {
+  body {
+    background-image: url(images/bg-mobile.svg);
+    margin: 20px;
+  }
+
+  #logo > img {
+    width: 150px;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #main-img > img {
+    max-width: 100%;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  #data {
+    max-width: 100%;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  p {
+    font-size: 16px;
+    margin: 20px 0;
+    line-height: 25px;
+  }
+
+  button {
+    width: 120px;
+  }
+
+  #icon {
+    justify-content: center;
+  }
+
+  #facebook,
+  #twitter,
+  #instagram {
+    width: 40px;
+    height: 40px;
+  }
 }
